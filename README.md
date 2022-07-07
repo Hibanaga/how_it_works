@@ -1,1 +1,1 @@
-# how_it_works
+# HOW IT WORKS
