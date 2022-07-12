@@ -15,7 +15,10 @@ export const Container = styled(Box)`
   justify-content: space-between;
 `;
 
-export const WrapperContent = styled(Box)``;
+export const WrapperContent = styled(Box)`
+  display: flex;
+  flex-direction: column-reverse;
+`;
 
 export const Heading = styled(Typography)`
   && {
@@ -23,6 +26,7 @@ export const Heading = styled(Typography)`
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-weight: ${themes.font.weight.bold};
   }
 `;
 

@@ -19,6 +19,7 @@ export const themes = {
     sizes: {
       primary: 8,
       secondary: 16,
+      tertiaryMiddle: 20,
       tertiary: 24,
       fourfold: 32,
       fivefold: 40,

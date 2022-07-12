@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import styled from "styled-components";
 import { MediaQueries } from "../../styles/Global.styled";
 import { themes } from "../../styles/theme";
@@ -26,4 +26,7 @@ export const Row = styled(Grid)`
 export const Wrapper = styled(MediaQueries)`
   margin: 0 auto;
   width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
