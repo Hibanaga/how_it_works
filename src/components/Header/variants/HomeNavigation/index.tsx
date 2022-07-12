@@ -6,10 +6,9 @@ import * as StyledThisComp from "./HomeNavigation.styled";
 const HomeNavigation = () => {
   return (
     <StyledThisComp.Container>
-      <StyledThisComp.ImageWrapper>item</StyledThisComp.ImageWrapper>
-
       <StyledThisComp.Row>
-        <StyledThisComp.NavigationWrapper>
+        <StyledThisComp.ImageWrapper>item</StyledThisComp.ImageWrapper>
+        <StyledThisComp.NavigationWrapper leftSpacing={3}>
           {routesHome.map(({ label, route, color }) => (
             <StyledThisComp.NavigationItemWrapper key={label}>
               <Link href={route}>
@@ -33,6 +32,9 @@ const HomeNavigation = () => {
           </StyledThisComp.NavigationWrapper>
         </StyledThisComp.NavigationWrapper>
       </StyledThisComp.Row>
+      <StyledThisComp.ContactButton variant="contained">
+        <StyledThisComp.ButtonContent>Contact</StyledThisComp.ButtonContent>
+      </StyledThisComp.ContactButton>
     </StyledThisComp.Container>
   );
 };

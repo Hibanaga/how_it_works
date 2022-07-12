@@ -5,6 +5,11 @@ export const themes = {
     howDefault: "#12141d",
     magentaDefault: "#8f2df0",
     orangeDefault: "#ff934f",
+    prussianBlue100: "#012A4A",
+    prussianBlue200: "#01497C",
+    prussianBlue300: "#2A6F97",
+    prussianBlue400: "#468FAF",
+    prussianBlue500: "#89C2D9",
   },
   font: {
     weight: {

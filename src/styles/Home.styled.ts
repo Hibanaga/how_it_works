@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { themes } from "./theme";
 
 export const Container = styled(Box)`
-  min-height: 60vh;
+  min-height: 70vh;
   height: 100%;
 
   width: 85%;
@@ -32,15 +32,4 @@ export const Heading = styled(Typography)`
 
 export const SubHeading = styled(Typography)`
   color: ${themes.colors.baseWhite};
-`;
-
-export const WrapperImage = styled(Icon)`
-  && {
-    min-height: 256px;
-    min-width: 256px;
-  }
-
-  & svg {
-    font-size: 256px;
-  }
 `;
