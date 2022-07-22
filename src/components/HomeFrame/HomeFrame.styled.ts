@@ -1,4 +1,4 @@
-import { Box, Icon } from "@mui/material";
+import { Box, IconButton, Tooltip } from "@mui/material";
 import styled from "styled-components";
 import { IAnimatedIconOptions } from "../../types/Style.types";
 
@@ -11,22 +11,40 @@ export const Container = styled(Box)`
   position: relative;
 `;
 
-export const AnimatedIconWrapper = styled(Icon)`
-  position: absolute;
-  z-index: 1;
-  top: ${({ topSpacing }: IAnimatedIconOptions) => `${topSpacing}%`};
-  left: ${({ leftSpacing }: IAnimatedIconOptions) => `${leftSpacing}%`};
-  color: ${({ colorIcon }: IAnimatedIconOptions) => colorIcon};
+export const IconTooltip = styled(Tooltip)`
+  transition: 250ms ease-in-out;
 
   && {
-    min-height: ${({ multipleSize }: IAnimatedIconOptions) =>
-      `${12 * multipleSize}px`};
-    min-width: ${({ multipleSize }: IAnimatedIconOptions) =>
-      `${12 * multipleSize}px`};
+    transition: 250ms ease-in-out;
+  }
+`;
+
+export const AnimatedIconContainer = styled(Box)``;
+
+export const AnimatedIconWrapper = styled(IconButton)`
+  position: absolute;
+  z-index: 1;
+  top: ${({ topspacing }: IAnimatedIconOptions) => `${topspacing}%`};
+  left: ${({ leftspacing }: IAnimatedIconOptions) => `${leftspacing}%`};
+  transform: rotate(
+    ${({ initialrotate }: IAnimatedIconOptions) => `${initialrotate}deg`}
+  );
+
+  && {
+    color: ${({ coloricon }: IAnimatedIconOptions) => coloricon};
+    min-height: ${({ multiplesize }: IAnimatedIconOptions) =>
+      `${16 * multiplesize}px`};
+    min-width: ${({ multiplesize }: IAnimatedIconOptions) =>
+      `${16 * multiplesize}px`};
+    transition: 250ms ease-in-out;
+
+    &:hover {
+      transform: rotate(0deg);
+    }
   }
 
   & svg {
-    font-size: ${({ multipleSize }: IAnimatedIconOptions) =>
-      `${12 * multipleSize}px`};
+    font-size: ${({ multiplesize }: IAnimatedIconOptions) =>
+      `${16 * multiplesize}px`};
   }
 `;

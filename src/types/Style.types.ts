@@ -3,8 +3,9 @@ export type NavigationItemColorType = {
 };
 
 export interface IAnimatedIconOptions {
-  colorIcon: string;
-  topSpacing: number;
-  leftSpacing: number;
-  multipleSize: number;
+  coloricon: string;
+  topspacing: number;
+  leftspacing: number;
+  multiplesize: number;
+  initialrotate: number;
 }

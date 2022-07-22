@@ -1,4 +1,4 @@
-import { Box, Icon, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import styled from "styled-components";
 import { themes } from "./theme";
 

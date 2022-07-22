@@ -1,5 +1,5 @@
-import { Box, Grid } from "@mui/material";
 import styled from "styled-components";
+import { Grid } from "@mui/material";
 import { MediaQueries } from "../../styles/Global.styled";
 import { themes } from "../../styles/theme";
 

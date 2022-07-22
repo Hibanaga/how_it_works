@@ -23,7 +23,7 @@ export const NavigationWrapper = styled(Box)`
   align-items: center;
 
   margin-left: ${({ leftSpacing }: NavigationWrapperSpacingType) =>
-    !!leftSpacing ? `${leftSpacing * 5}%` : 0};
+    leftSpacing ? `${leftSpacing * 5}%` : 0};
 `;
 
 export const NavigationItemWrapper = styled(Box)`
@@ -32,7 +32,7 @@ export const NavigationItemWrapper = styled(Box)`
 
 export const NavigationItem = styled(Typography)`
   color: ${({ color }: NavigationItemColorType) =>
-    !!color ? color : themes.colors.baseWhite};
+    color ? color : themes.colors.baseWhite};
   white-space: nowrap;
 
   && {
@@ -46,7 +46,12 @@ export const NavigationItem = styled(Typography)`
   }
 `;
 
-export const ImageWrapper = styled(Box)``;
+export const ImageWrapper = styled(Box)`
+  height: 38px;
+  min-width: 64px;
+  overflow: hidden;
+  position: relative;
+`;
 
 export const Separator = styled(Box)`
   width: 2px;
