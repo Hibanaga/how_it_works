@@ -11,6 +11,7 @@ export const themes = {
     prussianBlue300: "#2A6F97",
     prussianBlue400: "#468FAF",
     prussianBlue500: "#89C2D9",
+    contentGrey: "#8f9094",
   },
   font: {
     weight: {
