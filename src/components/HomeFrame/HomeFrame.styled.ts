@@ -16,10 +16,9 @@ export const IconTooltip = styled(Tooltip)`
 
   && {
     transition: 250ms ease-in-out;
+    z-index: 1;
   }
 `;
-
-export const AnimatedIconContainer = styled(Box)``;
 
 export const AnimatedIconWrapper = styled(IconButton)`
   position: absolute;

@@ -3,6 +3,7 @@ export const themes = {
     baseWhite: "#FFFFFF",
     baseBlack: "#000000",
     howDefault: "#12141d",
+    howLighther: "#1e2029",
     magentaDefault: "#8f2df0",
     orangeDefault: "#ff934f",
     prussianBlue100: "#012A4A",

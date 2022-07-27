@@ -6,13 +6,11 @@ export const Container = styled(Box)`
   min-height: 70vh;
   height: 100%;
 
-  width: 85%;
-  margin: 0 auto;
-  color: ${themes.colors.baseWhite};
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  color: ${themes.colors.baseWhite};
 `;
 
 export const WrapperContent = styled(Box)`

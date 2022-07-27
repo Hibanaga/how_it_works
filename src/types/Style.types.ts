@@ -9,3 +9,9 @@ export interface IAnimatedIconOptions {
   multiplesize: number;
   initialrotate: number;
 }
+
+export interface IPaperContainerOptions {
+  spacing: number;
+  multipleX: number;
+  multipleY: number;
+}

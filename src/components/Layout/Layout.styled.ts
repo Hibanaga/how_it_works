@@ -11,4 +11,7 @@ export const Container = styled(Grid)`
 
 export const Row = styled(Grid)``;
 
-export const Wrapper = styled(MediaQueries)``;
+export const Wrapper = styled(MediaQueries)`
+  width: 85%;
+  margin: 0 auto;
+`;
