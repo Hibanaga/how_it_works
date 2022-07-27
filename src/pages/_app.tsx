@@ -1,12 +1,14 @@
 import React from "react";
+import { ThemeProvider } from "@mui/material";
 import { EmotionCache } from "@emotion/cache";
 import { CacheProvider } from "@emotion/react";
-import createEmotionCache from "../utils/createEmotionCache";
 import type { AppProps } from "next/app";
-import "../../styles/globals.css";
+import { muiTheme } from "../styles/muiTheme";
+import createEmotionCacheHelper from "../utils/createEmotionCache.helper";
+import "../styles/globals.css";
 
 // Client-side cache, shared for the whole session of the user in the browser.
-const clientSideEmotionCache = createEmotionCache();
+const clientSideEmotionCache = createEmotionCacheHelper();
 
 interface ExtendedAppProps extends AppProps {
   emotionCache?: EmotionCache;
@@ -19,7 +21,9 @@ function MyApp({
 }: ExtendedAppProps): JSX.Element {
   return (
     <CacheProvider value={emotionCache}>
-      <Component {...pageProps} />
+      <ThemeProvider theme={muiTheme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </CacheProvider>
   );
 }
